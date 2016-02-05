@@ -5,6 +5,7 @@ Before do |s|
   if $driver_created
     LocalDriver.instance.start_app
   else
+    prepare_driver
     LocalDriver.instance.create_driver
     LocalDriver.instance.start_app
     $driver_created = true
@@ -28,4 +29,27 @@ After do |s|
   LocalDriver.instance.stop_app
 
   helper.kill_appium if start_appium?
+end
+
+private
+
+require_relative '../properties/location_properties'
+
+def prepare_driver
+  if android?
+    @local_driver = AndroidDriver.instance
+    @local_driver.create_driver(package, props, prepare_location)
+  end
+end
+
+def prepare_location
+  if app_parameter?
+    LocationProperties::APP
+  elsif external?
+    LocationProperties::EXTERNAL
+  elsif local?
+    LocationProperties::LOCAL
+  else
+    fail('Application execution parameter has to be added')
+  end
 end
