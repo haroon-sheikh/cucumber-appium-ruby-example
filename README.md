@@ -21,11 +21,15 @@ This will install the command line version of appium.
 
 Clone the framework
 
-    `git clone git@github.com:haroon-sheikh/example-ruby-cucumber-appium.git`
+```bash
+    git clone git@github.com:haroon-sheikh/example-ruby-cucumber-appium.git`
+```
 
 Navigate to the framework directoy
 
-    `cd example-ruby-cucumber-appium`
+```bash
+    cd example-ruby-cucumber-appium`
+```
 
 Install bundler and the gems the framework is dependent on
 
