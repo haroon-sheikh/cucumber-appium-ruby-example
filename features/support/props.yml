@@ -16,3 +16,4 @@ app_url:
  android_external:
   # TODO: Associate the app package with the path to the build
   your.package.here: http://99.99.99.99:8080/job/build.apk
+  
