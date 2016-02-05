@@ -72,14 +72,11 @@ Example:
 
     bundle exec cucumber -r features -p android_jenkins START_APPIUM=true APPIUM_PARAMETERS="--log-level debug"
 
-### [Android] Custom APK and Package
+### Custom APK and Package
 Usually the app package is set in `env.rb` and the path to the application is set in `props.yml`. You can however, if required, specify these as parameters when starting the tests.
 
 Example:
 
     bundle exec cucumber -r features -p android_jenkins apk=http://localhost:8080/jobs/app/lastsuccessfulbuild/build.apk package=com.app.package
 
-### [iOS] Custom ipa
-Counterpart to the above section, but for iOS. No package required, so just path to the ipa itself can be given as a parameter.
-
-    bundle ex....... -p iphone ipa={Full Path to ipa}
+* For iOS package isn't required, just path to the ipa itself can be given as a parameter.
