@@ -1,0 +1,9 @@
+:caps:
+  :platformName: 'Android'
+  :deviceName: 'Android'
+  :browserName: ''
+  :version: '4.2'
+  #TODO add app activity
+  :package: ''
+  :appActivity: ''
+  :newCommandTimeout: 300

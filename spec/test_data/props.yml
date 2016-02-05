@@ -1,0 +1,18 @@
+app_url:
+ ios_local:
+  # TODO: Associate the device type with the path to the local build, we used this to reference the hosted build when running the tests on the same Jenkins box that hosted the build
+  ios_simulator: http://localhost:8080/ios-simulator-build.zip
+  ios_device: http://localhost:8080/ios-device-build.zip
+
+ ios_external:
+   # TODO: Associate the device type with the path to the build
+   ios_simulator: http://99.99.99.99:8080/ios-simulator-build.zip
+   ios_device: http://99.99.99.99:8080/ios-device-build.zip
+
+ android_local:
+ # TODO: Associate the app package with the path to the local build, we used this to reference the hosted build when running the tests on the same Jenkins box that hosted the build
+  com.my.package: http://localhost:8080/path/to/your/build.apk
+
+ android_external:
+  # TODO: Associate the app package with the path to the build
+  com.my.package: http://99.99.99.99:8080/job/build.apk

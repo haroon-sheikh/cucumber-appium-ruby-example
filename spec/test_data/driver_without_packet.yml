@@ -1,0 +1,8 @@
+:caps:
+  :platformName: 'Android'
+  :deviceName: 'Android'
+  :browserName: ''
+  :version: '4.2'
+  :package: ''
+  :appActivity: ''
+  :newCommandTimeout: 300

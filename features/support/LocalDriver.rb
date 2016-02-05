@@ -14,7 +14,7 @@ class LocalDriver
 
   def create_driver
     if android?
-      if apk_parameter?
+      if app_parameter?
          @app = ENV['apk']
          ENV['package'] ? $package = ENV['package'] : raise("You need to provide package as a parameter as well!")
       elsif local?
@@ -40,7 +40,7 @@ class LocalDriver
       }
 
     elsif (iphone? || ipad?)
-      if ipa_parameter?
+      if app_parameter?
         @app = ENV['ipa']
       elsif local?
         if simulator?

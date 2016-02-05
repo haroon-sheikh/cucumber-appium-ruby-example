@@ -1,0 +1,8 @@
+:caps:
+  :autoLaunch: true
+  :browserName: ''
+  :version: '7.1'
+  :platformName: 'iOS'
+  :newCommandTimeout: 300
+  :autoAcceptAlerts: false
+  :keepKeyChains: false
