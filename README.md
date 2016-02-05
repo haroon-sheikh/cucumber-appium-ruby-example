@@ -4,8 +4,8 @@ This is an example framework to run automated BDD tests for Android and iOS.
 
 ## Prerequisites
 
-* You're using a MAC. Essential for iOS testing.
-* Android SDK downloaded*
+* Mac
+* Android SDK
 * Xcode installed
 * Ruby 2.1.1
 * Appium
@@ -31,7 +31,8 @@ Install bundler and the gems the framework is dependent on
     bundle install
 
 ## Running tests
-Prerequisite: The Appium server should be running, either from terminal or GUI.
+
+* The Appium server should be running, either from terminal or GUI.
 
     appium
 
@@ -60,7 +61,8 @@ Example usage where two (maximum) reruns are executed:
     bundle exec cucumber -r features -p android_jenkins_rerun2 @rerun2.txt
 
 ### Starting Appium Server from within the framework
-Prerequisite: Command line version of appium must be installed.
+
+* Command line version of appium must be installed.
 
 This may come in useful for running the tests from a CI Server, if you don't want to have to start and stop the appium server as a separate task.
 
