@@ -1,4 +1,4 @@
-# example-ruby-cucumber-appium
+# cucumber-appium-ruby-example
 
 This is an example framework to run automated BDD tests for Android and iOS.
 
@@ -19,11 +19,11 @@ This will install the command line version of appium.
 
 Clone the framework
 
-    git clone git@github.com:haroon-sheikh/example-ruby-cucumber-appium.git`
+    git clone git@github.com:haroon-sheikh/cucumber-appium-ruby-example.git`
 
 Navigate to the framework directoy
 
-    cd example-ruby-cucumber-appium`
+    cd cucumber-appium-ruby-example`
 
 Install bundler and the gems the framework is dependent on
 
