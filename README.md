@@ -47,7 +47,7 @@ In order to utilise the android specific features (logcat, screenrecording upon 
 
 Example:
 
-    bundle exec cucumber -r features -p android_jenkins udid=HT293479
+    bundle exec cucumber -r features -p android_ci udid=HT293479
 
 ### Reruns
 When running the tests on Jenkins we found that sometimes the tests would fail, either due to Appium instability or device not responding to touches etc.
@@ -56,9 +56,9 @@ To cater for this, we can use reruns. Each rerun will only run the failed tests 
 
 Example usage where two (maximum) reruns are executed:
 
-    bundle exec cucumber -r features -p android_jenkins
-    bundle exec cucumber -r features -p android_jenkins_rerun @rerun.txt
-    bundle exec cucumber -r features -p android_jenkins_rerun2 @rerun2.txt
+    bundle exec cucumber -r features -p android_ci
+    bundle exec cucumber -r features -p android_ci_rerun @rerun.txt
+    bundle exec cucumber -r features -p android_ci_rerun2 @rerun2.txt
 
 ### Starting Appium Server from within the framework
 
@@ -70,13 +70,13 @@ When starting the tests, give the parameter `START_APPIUM=true` and you can also
 
 Example:
 
-    bundle exec cucumber -r features -p android_jenkins START_APPIUM=true APPIUM_PARAMETERS="--log-level debug"
+    bundle exec cucumber -r features -p android_ci START_APPIUM=true APPIUM_PARAMETERS="--log-level debug"
 
 ### Custom APK and Package
 Usually the app package is set in `env.rb` and the path to the application is set in `props.yml`. You can however, if required, specify these as parameters when starting the tests.
 
 Example:
 
-    bundle exec cucumber -r features -p android_jenkins apk=http://localhost:8080/jobs/app/lastsuccessfulbuild/build.apk package=com.app.package
+    bundle exec cucumber -r features -p android_ci apk=http://localhost:8080/jobs/app/lastsuccessfulbuild/build.apk package=com.app.package
 
 * For iOS package isn't required, just path to the ipa itself can be given as a parameter.
