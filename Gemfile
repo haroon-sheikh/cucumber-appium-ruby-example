@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-gem 'rspec', '3.4.0'
-gem 'rspec-expectations', '3.4.0'
+gem 'rspec', '3.7.0'
+gem 'rspec-expectations', '3.7.0'
 gem 'pry', '0.9.10'
 gem 'pry-nav', '0.2.3'
 gem 'selenium-webdriver', '2.53'
