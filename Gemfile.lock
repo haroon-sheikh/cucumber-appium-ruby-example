@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (6.1.7.3)
+    activesupport (6.1.7.5)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
@@ -77,13 +77,13 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     websocket (1.2.8)
-    zeitwerk (2.6.8)
+    zeitwerk (2.6.11)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  activesupport (= 6.1.7.3)
+  activesupport (= 6.1.7.5)
   appium_lib (= 9.0.0)
   cucumber (= 2.4)
   factory_girl (~> 4.5)
